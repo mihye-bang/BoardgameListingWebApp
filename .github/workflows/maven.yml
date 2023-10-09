@@ -28,7 +28,12 @@ jobs:
       run: mvn   test
 
     - name: Build with Maven
-      run: mvn  install 
+      run: mvn  install
+
+    - uses: actions/upload-artifact@v3
+      with:
+       name: my-artifact
+       path: target
 
     # # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     # - name: Update dependency graph
