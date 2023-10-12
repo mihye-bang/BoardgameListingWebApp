@@ -82,7 +82,7 @@
 		</plugins>
 	</build>
 
-	<properties>
+<properties>
     <!-- JaCoCo Properties -->
     <jacoco.version>0.8.7</jacoco.version>
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
@@ -96,9 +96,7 @@
     <artifactId>jacoco-maven-plugin</artifactId>
     <version>0.8.7</version>
 </dependency>
-
-
-	<plugin>
+<plugin>
     <groupId>org.jacoco</groupId>
     <artifactId>jacoco-maven-plugin</artifactId>
     <version>${jacoco.version}</version>
